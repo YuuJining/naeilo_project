@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommunityActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4D6ADC">
+
+        <Button
+            android:id="@+id/area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="모든 지역"
+            android:background="@drawable/community_button"
+            android:minHeight="10dp"
+            android:minWidth="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="15dp"/>
+        <Button
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="별점"
+            android:textColor="#66000000"
+            android:background="@drawable/community_button"
+            android:minHeight="10dp"
+            android:minWidth="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/area"/>
+        <Button
+            android:id="@+id/order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="최신순"
+            android:background="@drawable/community_button"
+            android:minHeight="10dp"
+            android:minWidth="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/score"/>
+
+        <ImageButton
+            android:id="@+id/imgbtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/community_button1"
+            android:background="@drawable/community_imgbutton"
+            android:minHeight="10dp"
+            android:minWidth="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/order"/>
+
+        <ImageButton
+            android:id="@+id/imgbtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/community_button2"
+            android:background="@drawable/community_imgbutton"
+            android:minHeight="10dp"
+            android:minWidth="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/imgbtn1"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ScrollView>
+</LinearLayout>
