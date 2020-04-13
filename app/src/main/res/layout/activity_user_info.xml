@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".userInfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4D6ADC">
+
+        <ImageButton
+            android:id="@+id/personimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/userinfo_personimg"
+            android:background="@drawable/community_imgbutton"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"/>
+        <ImageButton
+            android:id="@+id/environmentimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/userinfo_environment"
+            android:background="@drawable/community_imgbutton"
+            android:layout_toRightOf="@+id/personimg"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="265dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/firstlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/personInfo"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/userinfo_personinfo" />
+
+                <TextView
+                    android:id="@+id/userid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/personInfo"
+                    android:text="내일러"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/userdetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_toRightOf="@+id/personInfo"
+                    android:text="20대 초반/여성\n자신을 소개해보세요!"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/followertv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="43dp"
+                    android:layout_toLeftOf="@+id/following"
+                    android:text="팔로워"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/follower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="55dp"
+                    android:layout_toLeftOf="@+id/following"
+                    android:text="0"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/followingtv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:text="팔로잉"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/following"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="30dp"
+                    android:text="0"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/seclayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/userinfo_frame"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageButton
+                    android:id="@+id/saving"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#FFFFFF"
+                    android:src="@drawable/saving" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="50dp"
+                    android:text="찜한 게시물"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/myreview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/saving"
+                    android:background="#FFFFFF"
+                    android:src="@drawable/myreview" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_toRightOf="@+id/saving"
+                    android:text="내 리뷰"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/mytravel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/myreview"
+                    android:background="#FFFFFF"
+                    android:src="@drawable/mytravel" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="53dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_toRightOf="@+id/myreview"
+                    android:text="내 여행"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/trip_scheduling_button"
+                    android:text="프로필 편집"
+                    android:layout_marginTop="25dp"
+                    android:textColor="#FFFFFF"
+                    android:padding="0dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/userinfo_separator">
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="나의 여행 다이어리"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="25dp"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add_box_black_24dp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="25dp"
+                android:layout_alignParentRight="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
