@@ -142,24 +142,24 @@
         android:orientation="horizontal">
         <ImageButton
             android:id="@+id/main_icon_selected"
-            android:layout_width="27dp"
-            android:layout_height="32dp"
+            android:layout_width="25dp"
+            android:layout_height="28dp"
             android:layout_marginLeft="48dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/home_selected"/>
         <ImageButton
             android:id="@+id/grid_icon"
-            android:layout_width="27dp"
-            android:layout_height="32dp"
+            android:layout_width="25dp"
+            android:layout_height="28dp"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="115dp"
+            android:layout_marginLeft="118dp"
             android:background="@drawable/grid"/>
         <ImageButton
             android:id="@+id/user_icon"
             android:layout_width="27dp"
-            android:layout_height="32dp"
+            android:layout_height="28dp"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="115dp"
+            android:layout_marginLeft="118dp"
             android:background="@drawable/user"/>
     </LinearLayout>
 </LinearLayout>
