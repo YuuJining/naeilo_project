@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="660dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/first_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="18dp"
+                android:gravity="left"
+                android:text="안녕하세요 내일러님!"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/information_bar"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/what_is_naeilo_1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/information_bar_button"
+                    android:text="내일로란?"
+                    android:textSize="13dp" />
+
+                <Button
+                    android:id="@+id/naeilo_service_1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/information_bar_button"
+                    android:text="내일로 혜택"
+                    android:textSize="13dp" />
+
+                <Button
+                    android:id="@+id/naeilo_tip_1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/information_bar_button"
+                    android:text="내일로팁"
+                    android:textSize="13dp" />
+
+                <Button
+                    android:id="@+id/FAQ_1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/information_bar_button"
+                    android:text="FAQ"
+                    android:textSize="13dp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/today_trip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="left"
+                    android:text="오늘의 일정"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/today_trip_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/today_trip"
+                    android:layout_marginLeft="18dp"
+                    android:text="0월 0일 (요일)"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+            </LinearLayout>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RelativeLayout
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="18dp"
+                            android:layout_width="115dp"
+                            android:layout_height="180dp"
+                            android:background="@drawable/trip_train_frame">
+                            <ImageButton
+                                android:id="@+id/train_1"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"
+                                app:srcCompat="@drawable/ic_train"
+                                android:background="@drawable/trip_train_circle_frame"/>
+                            <TextView
+                                android:id="@+id/departure_area_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="서울"
+                                android:textStyle="bold"
+                                android:textColor="#FFFFFF"
+                                android:gravity="center"
+                                android:layout_below="@+id/train_1"/>
+                            <TextView
+                                android:id="@+id/deprture_time_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="07:04"
+                                android:textColor="#FFFFFF"
+                                android:textSize="10dp"
+                                android:gravity="center"
+                                android:layout_below="@+id/departure_area_1"/>
+
+                            <View
+                                android:id="@+id/circle_1_1"
+                                android:layout_width="5dp"
+                                android:layout_height="5dp"
+                                android:layout_below="@+id/deprture_time_1"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginEnd="54dp"
+                                android:background="@drawable/circle"
+                                android:gravity="center_horizontal" />
+                            <View
+                                android:id="@+id/circle_1_2"
+                                android:layout_width="5dp"
+                                android:layout_height="5dp"
+                                android:layout_below="@+id/circle_1_1"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginEnd="54dp"
+                                android:background="@drawable/circle"
+                                android:gravity="center_horizontal" />
+                            <View
+                                android:id="@+id/circle_1_3"
+                                android:layout_width="5dp"
+                                android:layout_height="5dp"
+                                android:layout_below="@+id/circle_1_2"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginEnd="54dp"
+                                android:background="@drawable/circle"
+                                android:gravity="center_horizontal" />
+                            <TextView
+                                android:id="@+id/destination_area_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="동대구"
+                                android:textStyle="bold"
+                                android:textColor="#FFFFFF"
+                                android:gravity="center"
+                                android:layout_marginTop="12dp"
+                                android:layout_below="@+id/circle_1_3"/>
+                            <TextView
+                                android:id="@+id/destination_time_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="10:29"
+                                android:textColor="#FFFFFF"
+                                android:textSize="10dp"
+                                android:gravity="center"
+                                android:layout_below="@+id/destination_area_1"/>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="18dp"
+                            android:layout_width="115dp"
+                            android:layout_height="180dp"
+                            android:background="@drawable/trip_meal_frame">
+                            <ImageButton
+                                android:id="@+id/meal_1"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"
+                                app:srcCompat="@drawable/ic_meal"
+                                android:background="@drawable/trip_meal_circle_frame"/>
+                            <TextView
+                                android:id="@+id/meal_place_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="35dp"
+                                android:text="국대닭곱새"
+                                android:textStyle="bold"
+                                android:textColor="#FFFFFF"
+                                android:gravity="center"
+                                android:layout_below="@+id/meal_1"/>
+                            <TextView
+                                android:id="@+id/meal_specific_place_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="동대구역 도보 16분(1km)"
+                                android:textColor="#FFFFFF"
+                                android:textSize="10dp"
+                                android:gravity="center"
+                                android:layout_below="@+id/meal_place_1"/>
+                            <ImageButton
+                                android:id="@+id/meal_place_button_1"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_below="@+id/meal_specific_place_1"
+                                android:layout_marginTop="35dp"
+                                android:layout_marginLeft="40dp"
+                                app:srcCompat="@drawable/ic_map_pin"
+                                android:background="@drawable/trip_meal_circle_frame"/>
+                            <ImageButton
+                                android:id="@+id/meal_review_button_1"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_below="@+id/meal_specific_place_1"
+                                android:layout_toRightOf="@+id/meal_place_button_1"
+                                android:layout_marginTop="35dp"
+                                android:layout_marginLeft="10dp"
+                                app:srcCompat="@drawable/ic_star"
+                                android:background="@drawable/trip_meal_circle_frame"/>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="18dp"
+                            android:layout_width="115dp"
+                            android:layout_height="180dp"
+                            android:background="@drawable/trip_place_frame">
+                            <ImageButton
+                                android:id="@+id/place_1"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"
+                                app:srcCompat="@drawable/ic_heart_1"
+                                android:background="@drawable/trip_place_circle_frame"/>
+                            <TextView
+                                android:id="@+id/tour_spot_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="35dp"
+                                android:text="수성못"
+                                android:textStyle="bold"
+                                android:textColor="#FFFFFF"
+                                android:gravity="center"
+                                android:layout_below="@+id/place_1"/>
+                            <TextView
+                                android:id="@+id/spot_specific_place_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="동대구역 버스 20분(1km)\n (13개 정류장)"
+                                android:textColor="#FFFFFF"
+                                android:textSize="10dp"
+                                android:gravity="center"
+                                android:layout_below="@+id/tour_spot_1"/>
+                            <ImageButton
+                                android:id="@+id/spot_button_1"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_below="@+id/spot_specific_place_1"
+                                android:layout_marginTop="22dp"
+                                android:layout_marginLeft="40dp"
+                                app:srcCompat="@drawable/ic_map_pin"
+                                android:background="@drawable/trip_place_circle_frame"/>
+                            <ImageButton
+                                android:id="@+id/spot_review_button_1"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_below="@+id/spot_specific_place_1"
+                                android:layout_toRightOf="@+id/spot_button_1"
+                                android:layout_marginTop="22dp"
+                                android:layout_marginLeft="10dp"
+                                app:srcCompat="@drawable/ic_star"
+                                android:background="@drawable/trip_place_circle_frame"/>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="18dp"
+                            android:layout_width="115dp"
+                            android:layout_height="180dp"
+                            android:background="@drawable/trip_meal_frame">
+                            <ImageButton
+                                android:id="@+id/meal_2"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"
+                                app:srcCompat="@drawable/ic_meal"
+                                android:background="@drawable/trip_meal_circle_frame"/>
+                            <TextView
+                                android:id="@+id/meal_place_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="35dp"
+                                android:text="국대닭곱새"
+                                android:textStyle="bold"
+                                android:textColor="#FFFFFF"
+                                android:gravity="center"
+                                android:layout_below="@+id/meal_2"/>
+                            <TextView
+                                android:id="@+id/meal_specific_place_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="동대구역 도보 16분(1km)"
+                                android:textColor="#FFFFFF"
+                                android:textSize="10dp"
+                                android:gravity="center"
+                                android:layout_below="@+id/meal_place_2"/>
+                            <ImageButton
+                                android:id="@+id/meal_place_button_2"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_below="@+id/meal_specific_place_2"
+                                android:layout_marginTop="35dp"
+                                android:layout_marginLeft="40dp"
+                                app:srcCompat="@drawable/ic_map_pin"
+                                android:background="@drawable/trip_meal_circle_frame"/>
+                            <ImageButton
+                                android:id="@+id/meal_review_button_2"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_below="@+id/meal_specific_place_2"
+                                android:layout_toRightOf="@+id/meal_place_button_2"
+                                android:layout_marginTop="35dp"
+                                android:layout_marginLeft="10dp"
+                                app:srcCompat="@drawable/ic_star"
+                                android:background="@drawable/trip_meal_circle_frame"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/line" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/first_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="18dp"
+                    android:gravity="left"
+                    android:text="여행 체크"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/check_1"
+                android:layout_width="380dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/checklist_bar_frame">
+
+                <TextView
+                    android:id="@+id/check_1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginBottom="11dp"
+                    android:text="대구광역시(10:00 기준)"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+                <TextView
+                    android:id="@+id/check_1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_alignTop="@+id/check_1_1"
+                    android:layout_toRightOf="@+id/check_1_1"
+                    android:text="30℃"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+                <TextView
+                    android:id="@+id/check_1_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignTop="@+id/check_1_1"
+                    android:layout_toRightOf="@+id/check_1_2"
+                    android:text="맑음"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+                <TextView
+                    android:id="@+id/check_1_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignTop="@+id/check_1_1"
+                    android:layout_toRightOf="@+id/check_1_3"
+                    android:text="강수확률 20%"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <ImageButton
+                    android:id="@+id/check_delete_button_1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignTop="@+id/check_1_1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="-4dp"
+                    android:layout_marginEnd="9dp"
+                    android:background="@drawable/checklist_delete_button"
+                    app:srcCompat="@drawable/ic_x" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/check_2"
+                android:layout_width="380dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/checklist_bar_frame">
+
+                <TextView
+                    android:id="@+id/check_2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginBottom="11dp"
+                    android:text="대구광역시(10:00 기준)"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+                <TextView
+                    android:id="@+id/check_2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_alignTop="@+id/check_2_1"
+                    android:layout_toRightOf="@+id/check_2_1"
+                    android:text="30℃"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+                <TextView
+                    android:id="@+id/check_2_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignTop="@+id/check_2_1"
+                    android:layout_toRightOf="@+id/check_2_2"
+                    android:text="맑음"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+                <TextView
+                    android:id="@+id/check_2_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignTop="@+id/check_2_1"
+                    android:layout_toRightOf="@+id/check_2_3"
+                    android:text="강수확률 20%"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <ImageButton
+                    android:id="@+id/check_delete_button_2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignTop="@+id/check_2_1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="-4dp"
+                    android:layout_marginEnd="9dp"
+                    android:background="@drawable/checklist_delete_button"
+                    app:srcCompat="@drawable/ic_x" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/check_3"
+                android:layout_width="380dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/checklist_bar_frame">
+
+                <TextView
+                    android:id="@+id/check_3_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginBottom="11dp"
+                    android:text="대구광역시(10:00 기준)"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+                <TextView
+                    android:id="@+id/check_3_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_alignTop="@+id/check_3_1"
+                    android:layout_toRightOf="@+id/check_3_1"
+                    android:text="30℃"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+                <TextView
+                    android:id="@+id/check_3_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignTop="@+id/check_3_1"
+                    android:layout_toRightOf="@+id/check_3_2"
+                    android:text="맑음"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+                <TextView
+                    android:id="@+id/check_3_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignTop="@+id/check_3_1"
+                    android:layout_toRightOf="@+id/check_3_3"
+                    android:text="강수확률 20%"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <ImageButton
+                    android:id="@+id/check_delete_button_3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignTop="@+id/check_3_1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="-4dp"
+                    android:layout_marginEnd="9dp"
+                    android:background="@drawable/checklist_delete_button"
+                    app:srcCompat="@drawable/ic_x" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/check_4"
+                android:layout_width="380dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/checklist_bar_frame">
+
+                <TextView
+                    android:id="@+id/check_4_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginBottom="11dp"
+                    android:text="대구광역시(10:00 기준)"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+                <TextView
+                    android:id="@+id/check_4_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_alignTop="@+id/check_4_1"
+                    android:layout_toRightOf="@+id/check_4_1"
+                    android:text="30℃"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+                <TextView
+                    android:id="@+id/check_4_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignTop="@+id/check_4_1"
+                    android:layout_toRightOf="@+id/check_4_2"
+                    android:text="맑음"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+                <TextView
+                    android:id="@+id/check_4_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignTop="@+id/check_4_1"
+                    android:layout_toRightOf="@+id/check_4_3"
+                    android:text="강수확률 20%"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <ImageButton
+                    android:id="@+id/check_delete_button_4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignTop="@+id/check_4_1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="-4dp"
+                    android:layout_marginEnd="9dp"
+                    android:background="@drawable/checklist_delete_button"
+                    app:srcCompat="@drawable/ic_x" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/main_icon_selected"
+            android:layout_width="25dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_home_b"/>
+        <ImageButton
+            android:id="@+id/grid_icon"
+            android:layout_width="25dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="118dp"
+            android:background="@drawable/ic_grid"/>
+        <ImageButton
+            android:id="@+id/user_icon"
+            android:layout_width="25dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="118dp"
+            android:background="@drawable/ic_user"/>
+    </LinearLayout>
+</LinearLayout>
