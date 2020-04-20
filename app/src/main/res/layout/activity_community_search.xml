@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CommunitySearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#4D6ADC"
+        android:padding="5dp">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="20dp"
+            android:hint="검색어를 입력하세요"
+            android:padding="5dp"
+            android:drawableLeft="@drawable/community_searchbar_image"
+            android:drawablePadding="10dp"
+            android:background="@drawable/community_searchbar"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="취소"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/community_searchbar_button"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#374C9E">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#맛집    x"
+            android:textColor="#FFFFFF"
+            android:padding="7dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/community_searchbar_bottombtn"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="530dp">
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="3" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/main_icon_selected"
+            android:layout_width="25dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_home_b"/>
+        <ImageButton
+            android:id="@+id/grid_icon"
+            android:layout_width="25dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="118dp"
+            android:background="@drawable/ic_grid"/>
+        <ImageButton
+            android:id="@+id/user_icon"
+            android:layout_width="25dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="118dp"
+            android:background="@drawable/ic_user"/>
+    </LinearLayout>
+</LinearLayout>

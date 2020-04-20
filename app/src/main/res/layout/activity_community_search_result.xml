@@ -75,11 +75,28 @@
             android:layout_toRightOf="@+id/imgbtn1"/>
 
     </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#374C9E">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#맛집    x"
+            android:textColor="#FFFFFF"
+            android:padding="7dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/community_searchbar_bottombtn"/>
+
+    </LinearLayout>
     <ScrollView
         android:id="@+id/scrollView1"
         android:layout_width="match_parent"
-        android:layout_height="580dp">
+        android:layout_height="540dp">
 
         <GridView
             android:layout_width="match_parent"

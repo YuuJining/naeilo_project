@@ -9,18 +9,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WithTripMainActivity">
+
+        <activity android:name=".WithTripMainActivity"/>
+
+
+        <activity android:name=".SmartScheduleActivity"></activity>
+
+        <activity android:name=".CommunitySearchResultActivity"></activity>
+
+        <activity android:name=".CommunityContentActivity"></activity>
+
+
+        <activity android:name=".CommunitySearchActivity" />
+
+        <activity android:name=".userInfoActivity" />
+        <activity android:name=".CommunityActivity" />
+        <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SmartScheduleActivity" />
-        <activity android:name=".userInfoActivity" />
-        <activity android:name=".CommunityActivity" />
-        <activity android:name=".MainActivity">
-        </activity>
+
     </application>
 
 </manifest>
