@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/trip_date_1"
+                android:layout_width="80dp"
+                android:layout_height="400dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:background="#374C9E"
+                android:text="2020.\n08.03."
+                android:gravity="center"/>
+            <Button
+                android:id="@+id/trip_schedule_1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_toRightOf="@+id/trip_date_1"
+                android:background="@drawable/trip_schedule_list_layout"
+                android:gravity="left"
+                android:text=""/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
