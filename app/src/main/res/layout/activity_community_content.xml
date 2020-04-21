@@ -52,11 +52,11 @@
             android:id="@+id/imgbtn1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/community_button1"
+            android:src="@drawable/ic_slack"
             android:background="@drawable/community_imgbutton"
             android:minHeight="10dp"
             android:minWidth="10dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="16dp"
             android:layout_marginBottom="4dp"
             android:layout_marginLeft="6dp"
             android:layout_toRightOf="@+id/order"/>
@@ -65,11 +65,11 @@
             android:id="@+id/imgbtn2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/community_button2"
+            android:src="@drawable/ic_minimize"
             android:background="@drawable/community_imgbutton"
             android:minHeight="10dp"
             android:minWidth="10dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="16dp"
             android:layout_marginBottom="4dp"
             android:layout_marginLeft="6dp"
             android:layout_toRightOf="@+id/imgbtn1"/>
@@ -121,6 +121,7 @@
                 android:layout_height="wrap_content"
                 android:text="피자"
                 android:textSize="15dp"
+                android:textColor="#000000"
                 android:textStyle="bold"
                 android:layout_toRightOf="@+id/communityPersoninfo"
                 android:layout_marginTop="22dp"
@@ -140,7 +141,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:numStars="5"
-                android:rating="5"
+                android:rating="0"
                 android:stepSize="0.5"
                 android:isIndicator="false"
                 android:minWidth="15dp"
@@ -191,13 +192,12 @@
                  android:layout_width="0dp"
                  android:layout_height="wrap_content"
                  android:layout_weight="3"
-                 android:orientation="horizontal"
-                 android:background="#FFFFFF">
+                 android:orientation="horizontal">
 
                  <ImageButton
                      android:layout_width="wrap_content"
                      android:layout_height="wrap_content"
-                     android:src="@drawable/community_heart"
+                     android:src="@drawable/ic_heart"
                      android:layout_marginTop="10dp"
                      android:layout_marginLeft="25dp"
                      android:background="#FFFFFF"/>
@@ -205,9 +205,9 @@
                  <ImageButton
                      android:layout_width="wrap_content"
                      android:layout_height="wrap_content"
-                     android:src="@drawable/community_saving"
+                     android:src="@drawable/ic_bookmark"
                      android:layout_marginTop="10dp"
-                     android:layout_marginLeft="15dp"
+                     android:layout_marginLeft="20dp"
                      android:background="#FFFFFF"/>
              </LinearLayout>
          </LinearLayout>

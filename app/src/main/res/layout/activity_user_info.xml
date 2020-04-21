@@ -16,22 +16,22 @@
             android:id="@+id/personimg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/userinfo_personimg"
-            android:background="@drawable/community_imgbutton"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginBottom="5dp"/>
+            android:src="@drawable/ic_user_plus"
+            android:background="@drawable/userinfo_imgbgr"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"/>
         <ImageButton
             android:id="@+id/environmentimg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/userinfo_environment"
-            android:background="@drawable/community_imgbutton"
+            android:src="@drawable/ic_settings"
+            android:background="@drawable/userinfo_imgbgr"
             android:layout_toRightOf="@+id/personimg"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="265dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="5dp"/>
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="310dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"/>
 
     </RelativeLayout>
 
@@ -140,10 +140,10 @@
                     android:id="@+id/saving"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="37dp"
                     android:layout_marginTop="20dp"
                     android:background="#FFFFFF"
-                    android:src="@drawable/saving" />
+                    android:src="@drawable/ic_bookmark_profile" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -162,7 +162,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_toRightOf="@id/saving"
                     android:background="#FFFFFF"
-                    android:src="@drawable/myreview" />
+                    android:src="@drawable/ic_star_profile" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -178,11 +178,11 @@
                     android:id="@+id/mytravel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="55dp"
+                    android:layout_marginLeft="57dp"
                     android:layout_marginTop="20dp"
                     android:layout_toRightOf="@+id/myreview"
                     android:background="#FFFFFF"
-                    android:src="@drawable/mytravel" />
+                    android:src="@drawable/ic_briefcase_profile" />
 
                 <TextView
                     android:layout_width="wrap_content"

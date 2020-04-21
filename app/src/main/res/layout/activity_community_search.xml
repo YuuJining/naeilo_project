@@ -15,14 +15,14 @@
         android:padding="5dp">
         <EditText
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_weight="8"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="3dp"
             android:layout_marginLeft="20dp"
             android:hint="검색어를 입력하세요"
-            android:padding="5dp"
-            android:drawableLeft="@drawable/community_searchbar_image"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/ic_slack_blue"
             android:drawablePadding="10dp"
             android:background="@drawable/community_searchbar"/>
 

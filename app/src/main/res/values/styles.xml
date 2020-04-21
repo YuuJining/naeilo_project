@@ -10,6 +10,6 @@
 
     <style name="ratingStars"
         parent="@android:style/Widget.RatingBar">
-        <item name="android:progressDrawable">@drawable/community_star</item>
+        <item name="android:progressDrawable">@drawable/store_ratingbar</item>
     </style>
 </resources>
