@@ -6,21 +6,21 @@
         android:id="@+id/home"
         app:showAsAction="always"
         android:enabled="true"
-        android:icon="@drawable/ic_home"
+        android:icon="@drawable/ic_home_b"
         android:title="Home"/>
 
     <item
         android:id="@+id/community"
         app:showAsAction="always"
         android:enabled="true"
-        android:icon="@drawable/ic_grid"
+        android:icon="@drawable/ic_grid_b"
         android:title="Community"/>
 
     <item
         android:id="@+id/userInfo"
         app:showAsAction="always"
         android:enabled="true"
-        android:icon="@drawable/ic_user"
+        android:icon="@drawable/ic_user_b"
         android:title="UserInfo"/>
 
 </menu>
