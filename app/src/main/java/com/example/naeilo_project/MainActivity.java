@@ -13,13 +13,17 @@ public class MainActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
     ViewPager2 mainViewpager;
+    MainViewPagerAdapter viewPagerAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        viewPagerAdapter = new MainViewPagerAdapter(this,3);
         bottomNavigationView=findViewById(R.id.bottom_navigation);
         mainViewpager=findViewById(R.id.main_viewpager);
+        mainViewpager.setAdapter(viewPagerAdapter);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -27,14 +31,6 @@ public class MainActivity extends AppCompatActivity {
                 switch (menuItem.getItemId()) {
                     case R.id.home: {
                         mainViewpager.setCurrentItem(0);
-                        return true;
-                    }
-                    case R.id.community: {
-                        mainViewpager.setCurrentItem(1);
-                        return true;
-                    }
-                    case R.id.userInfo: {
-                        mainViewpager.setCurrentItem(2);
                         return true;
                     }
                     default:
