@@ -19,7 +19,7 @@
             android:layout_marginStart="0dp"
             android:layout_gravity="bottom"
             app:labelVisibilityMode="unlabeled"
-            app:itemBackground="@color/colorPrimary"
+            app:itemBackground="@color/barBackgroud"
             app:itemIconTint="@drawable/item_color"
             app:itemTextColor="@drawable/item_color"
             app:menu="@menu/bottom_navigation_main"/>
