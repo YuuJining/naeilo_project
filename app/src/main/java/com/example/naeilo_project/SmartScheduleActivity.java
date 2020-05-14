@@ -9,7 +9,7 @@ public class SmartScheduleActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_smart_schedule);
+        setContentView(R.layout.fragment_smart_schedule);
 
     }
 }
