@@ -10,19 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+
+        <activity android:name=".UserInfoMenuActivity"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name=".CommunityContentActivity"/>
         <activity android:name=".WithTripMainActivity"/>
 
 
         <activity android:name=".SmartScheduleActivity"></activity>
 
         <activity android:name=".CommunitySearchResultActivity"></activity>
-
-        <activity android:name=".CommunityContentActivity"></activity>
-
-
-
-        <activity android:name=".UserInfoMenuActivity"></activity>
-
+        
         <activity android:name=".CommunitySearchActivity" />
 
         <activity android:name=".userInfoActivity" />
