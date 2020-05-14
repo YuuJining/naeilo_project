@@ -10,5 +10,6 @@ public class SmartScheduleActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_smart_schedule);
+
     }
 }
