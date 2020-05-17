@@ -7,17 +7,11 @@
     android:layout_marginBottom="60dp"
     tools:context=".UserInfoMenuActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:background="#00FFFFFF">
-
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="480dp"
-        android:background="@drawable/user_info_menu_layout"
+        android:layout_height="380dp"
+        android:background="#FFFFFF"
         android:orientation="vertical">
 
         <TextView
@@ -31,6 +25,7 @@
         <View
             android:layout_width="350dp"
             android:layout_height="2dp"
+            android:layout_gravity="center"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="25dp"
             android:layout_marginRight="30dp"
@@ -47,6 +42,7 @@
         <View
             android:layout_width="350dp"
             android:layout_height="2dp"
+            android:layout_gravity="center"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="25dp"
             android:layout_marginRight="30dp"
@@ -63,6 +59,7 @@
         <View
             android:layout_width="350dp"
             android:layout_height="2dp"
+            android:layout_gravity="center"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="25dp"
             android:layout_marginRight="30dp"
@@ -79,6 +76,7 @@
         <View
             android:layout_width="350dp"
             android:layout_height="2dp"
+            android:layout_gravity="center"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="25dp"
             android:layout_marginRight="30dp"

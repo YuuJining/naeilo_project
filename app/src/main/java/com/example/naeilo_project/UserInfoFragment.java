@@ -22,7 +22,9 @@ public class UserInfoFragment extends Fragment {
         environmentimg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ((MainActivity)getActivity()).replaceFragment(UserInfoMenuFragment.newInstance());
+//                ((MainActivity)getActivity()).replaceFragment(UserInfoMenuFragment.newInstance());
+                UserInfoMenuFragment dialog = new UserInfoMenuFragment();
+                dialog.show(getActivity().getSupportFragmentManager(),"tag");
             }
         });
         return viewGroup;

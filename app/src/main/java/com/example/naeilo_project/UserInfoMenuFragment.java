@@ -9,9 +9,10 @@ import android.widget.PopupMenu;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 
-public class UserInfoMenuFragment extends Fragment {
+public class UserInfoMenuFragment extends DialogFragment {
     ViewGroup viewGroup;
     public static UserInfoMenuFragment newInstance() {
         return new UserInfoMenuFragment();

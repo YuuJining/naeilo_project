@@ -20,7 +20,7 @@
         <activity android:name=".SmartScheduleActivity"></activity>
 
         <activity android:name=".CommunitySearchResultActivity"></activity>
-        
+
         <activity android:name=".CommunitySearchActivity" />
 
         <activity android:name=".userInfoActivity" />
@@ -30,8 +30,8 @@
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
     </application>
