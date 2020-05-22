@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/all"
+        android:title="전체"/>
+    <item
+        android:id="@+id/score1"
+        android:title="1점 이상"/>
+    <item
+        android:id="@+id/score2"
+        android:title="2점 이상"/>
+    <item
+        android:id="@+id/score3"
+        android:title="3점 이상"/>
+    <item
+        android:id="@+id/score4"
+        android:title="4점 이상"/>
+    <item
+        android:id="@+id/score5"
+        android:title="5점"/>
+</menu>
