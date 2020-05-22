@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_container">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="45dp"
+        android:text="아이디 / 비밀번호 찾기"
+        android:textSize="17dp"
+        android:textColor="#4E6BDE"
+        android:gravity="right"/>
+
+    <EditText
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:background="@drawable/login_edittext"
+        android:hint="      아이디"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:textColorHint="#4E6BDE" />
+
+    <EditText
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:background="@drawable/login_edittext"
+        android:hint="      비밀번호"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:textColorHint="#4E6BDE" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:text="카카오로 로그인"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/login_button"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:text="로그인"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/login_button"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:text="아직 계정이 없으신가요?"
+        android:textColor="#4E6BDE"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:background="@drawable/login_white_button"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
