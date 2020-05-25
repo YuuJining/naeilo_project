@@ -15,30 +15,49 @@
         android:textSize="17dp"
         android:textColor="#4E6BDE"
         android:gravity="right"/>
-
-    <EditText
+    <LinearLayout
         android:layout_width="330dp"
         android:layout_height="50dp"
-        android:background="@drawable/login_edittext"
-        android:hint="      아이디"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="40dp"
-        android:textColorHint="#4E6BDE" />
+        android:orientation="horizontal"
+        android:background="@drawable/login_edittext">
+        <EditText
+            android:id="@+id/edit_id"
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:hint="아이디"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/sign_up_edittext"
+            android:textColorHint="#4E6BDE" />
+    </LinearLayout>
 
-    <EditText
+    <LinearLayout
         android:layout_width="330dp"
         android:layout_height="50dp"
-        android:background="@drawable/login_edittext"
-        android:hint="      비밀번호"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="40dp"
-        android:textColorHint="#4E6BDE" />
+        android:orientation="horizontal"
+        android:background="@drawable/login_edittext">
+        <EditText
+            android:id="@+id/edit_pwd"
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:inputType="textPassword"
+            android:hint="비밀번호"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/sign_up_edittext"
+            android:textColorHint="#4E6BDE" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <Button
+            android:id="@+id/kakao_login_btn"
             android:layout_width="160dp"
             android:layout_height="50dp"
             android:text="카카오로 로그인"
@@ -50,6 +69,7 @@
             android:layout_marginTop="40dp"/>
 
         <Button
+            android:id="@+id/login_btn"
             android:layout_width="160dp"
             android:layout_height="50dp"
             android:text="로그인"
@@ -62,6 +82,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/sign_up_btn"
         android:layout_width="330dp"
         android:layout_height="50dp"
         android:text="아직 계정이 없으신가요?"
