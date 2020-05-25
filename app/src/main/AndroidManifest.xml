@@ -9,9 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".SmartScheduleActivity"></activity>
 
         <activity android:name=".CommunitySearchResultActivity"></activity>
+
+        <activity android:name=".CommunityContentActivity"></activity>
+
+
         <activity android:name=".CommunitySearchActivity" />
 
         <activity android:name=".userInfoActivity" />
