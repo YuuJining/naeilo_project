@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".SmartScheduleActivity"></activity>
+
+        <activity android:name=".CommunitySearchResultActivity"></activity>
+        <activity android:name=".CommunitySearchActivity" />
+
         <activity android:name=".userInfoActivity" />
         <activity android:name=".CommunityActivity" />
         <activity android:name=".MainActivity">
